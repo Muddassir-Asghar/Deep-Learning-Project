@@ -12,9 +12,6 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
-# Logs and outputs
-*.log
-
 # Model artifacts
 *.pt
 *.pth
