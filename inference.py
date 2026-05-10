@@ -6,7 +6,7 @@ from PIL import Image
 from torchvision import transforms
 from transformers import AutoImageProcessor, AutoModel
 
-from improved_model import Model
+from src.model import Model
 
 
 def load_image(path, processor):
@@ -35,7 +35,7 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     processor = AutoImageProcessor.from_pretrained(args.model_name_or_path)
     vit = AutoModel.from_pretrained(args.model_name_or_path)
-    model = Model(vit, processor, argparse.Namespace(focal_alpha=-1.0, focal_gamma=2.0))
+    model = Model(vit, argparse.Namespace(focal_alpha=-1.0, focal_gamma=2.0))
 
     state_dict = torch.load(args.checkpoint, map_location=device)
     model.load_state_dict(state_dict)
