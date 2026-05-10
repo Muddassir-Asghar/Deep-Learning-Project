@@ -1,0 +1,17 @@
+model:
+  name_or_path: facebook/dinov2-large
+  checkpoint: checkpoints/davit_pneumonia_detection.bin
+  num_labels: 2
+
+data:
+  sample_csv: data/sample_data.csv
+  image_size: 224
+
+training:
+  epochs: 30
+  train_batch_size: 8
+  eval_batch_size: 8
+  learning_rate: 0.0001
+  seed: 123456
+  focal_gamma: 2.0
+  focal_alpha: -1.0

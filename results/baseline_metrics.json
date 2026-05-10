@@ -1,0 +1,13 @@
+{
+  "model": "DAViT baseline",
+  "source_log": "davit_pneumonia_detection_A2.log",
+  "task": "pneumonia_detection",
+  "metrics": {
+    "f1": 0.9695431472081218,
+    "precision": 0.9597989949748744,
+    "recall": 0.9794871794871794,
+    "specificity": 0.9316239316239316,
+    "accuracy": 0.9615384615384616,
+    "auc": 0.9555555555555557
+  }
+}

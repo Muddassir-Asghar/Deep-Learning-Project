@@ -1,0 +1,13 @@
+{
+  "model": "Improved DAViT",
+  "source_log": "davit_improvement_train.log",
+  "task": "pneumonia_detection",
+  "metrics": {
+    "f1": 0.9754552652414885,
+    "precision": 0.9903536977491961,
+    "recall": 0.9609984399375975,
+    "specificity": 0.9753086419753086,
+    "accuracy": 0.9649321266968326,
+    "auc": 0.968153540956453
+  }
+}
